@@ -1,0 +1,78 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+body{
+	font-size: 14px;
+	font-family:"微软雅黑", "Arial";
+	color: #000;
+	background-image: url(imags/style-all-body-background-image.jpg)
+}
+main{
+	width: 980px;
+	margin: 0px auto;
+	background-color:#FFFFFF;
+	height: auto;
+	overflow: hidden;
+}
+
+section{
+	padding: 15px;
+	float: left;
+}
+header{
+	width: 980PX;
+	height: 215PX;
+	margin: 0px auto;
+	background-image:url(imags/style-all-header-background-image.jpg);
+}
+#blog_name{
+	font-size: 60px;
+	font-family: "楷体";
+	font-weight: bold;
+	padding-left: 100px;
+	padding-top: 88px;
+}
+nav{
+	width:980px;
+	heught:55px;
+	margin:0px auto;
+	background-color:green;
+}
+nav ul{
+	margin-left:40px;
+}
+nav ul li{
+	float:left;
+	line-height:25px;
+	padding:0px 5px;
+}
+nav a:link,nav a:visited{
+	color:#fff;
+	font-weight:bold;
+}
+nav a:link {
+	color: #FFFFFF;
+}
+nav a:visited {
+	color: #FFFFFF;
+}
+nav a:hover {
+	color: #20CAF0;
+}
+nav a:active {
+	color: #458ff3;
+}
+section #list{
+	height: 95px;
+	background-repeat: no-repeat;
+}
+footer{
+	clear:both;
+	width: 980px;
+	margin: 0px auto;
+	background-image: url(imags/style-all-footer-background-image.jpg);
+	height: 66px;
+}

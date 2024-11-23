@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>旅游摄影作品交流</title>
+	<link rel="shortcut icon"  href="imags/Logo.png"/>
+<style type="text/css">
+	
+}  
+legend,{  
+    color:#302A2A;  
+    font: bold 32px/2 Verdana, Geneva, sans-serif;  
+    font-weight: bold;  
+    text-align: left;  
+    text-shadow: 2px 2px 2px rgb(88, 126, 156); 
+	color: darkblue;
+}
+	
+#main {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	width:900px;
+	background-color:lavender;
+}
+body{
+	background-image: url(imags/style-all-body-background-image.jpg)
+}
+h2{
+	color:darkblue;
+	font-family:"微软雅黑";
+	text-align: center;
+	font-size: 30px;
+	}
+h3{
+	color:darkblue;
+	font-family: "方正姚体";
+	font-size: 20px;
+	}
+label{
+	font-family:"华文楷体";
+	font-size: 18px;
+	}
+	.button{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 4px;
+	margin-left: 40px;
+	margin-right: 4px;
+	margin-top: 4px;
+	background-image: url(imags/sheyingjiaoliu-images/anniu.png);
+	border-width: 0px;
+	}
+body a:link {
+	color:#1DAE14;
+}
+body a:visited {
+	color:#1DAE14;
+}
+body a:hover {
+	color: #20CAF0;
+}
+body a:active {
+	color: #458ff3;
+}
+fieldset,#header{  
+    border-style:ridge;
+	border-color: darkslateblue;
+    border-width: 2px;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+    -khtml-border-radius: 5px;  
+    border-radius: 5px;  
+    line-height: 30px;  
+    list-style: none;  
+    padding: 5px 10px;  
+    margin-bottom: 2px;
+	}
+</style>
+	
+<script language="javascript">
+function check()
+{
+  var fr=document.getElementById("tel").value;
+  if(fr==""||isNaN(fr))
+     {
+		 alert("电话号码必须为数字");	
+	}
+}
+</script>
+	
+</head>
+
+<body>
+<div id="main">
+<form action="tijiao.html" enctype="multipart/form-data">
+	
+  <div id="header">
+	<h2>旅游摄影作品交流</h2>
+  <p style="font-family: '黑体'; font-size: 18px; color: #000000;">&nbsp; <a href="index.html">←回到主页</a></p>
+	</div>
+  
+ <fieldset>
+   <h3>
+     <legend>个人信息</legend>
+   </h3> 
+   <p>
+     <label for="textfield">用户名:</label>
+    <input name="textfield" type="text" required="required" id="textfield" size="25" maxlength="30">
+</p>
+  <p><label>性别：</label>
+    <label>
+      <input name="sex" type="radio" id="RadioGroup1_0" value="男" checked="checked">
+      男</label>
+    <label>
+      <input type="radio" name="sex" value="女" id="RadioGroup1_1">
+      女</label>
+  </p>
+  <p>
+    <label for="date">出生日期:</label>
+    <input type="date" name="date" id="date">    
+    </p>
+  <p>
+    <label for="tel">联系电话:</label>
+    <input name="tel" type="tel" required="required" id="tel" size="11" maxlength="11" onBlur="check()">
+    </p>
+  <p>
+    <label for="email">电子邮件:</label>
+    <label for="email">:</label>
+    <input name="email" type="email" id="email" size="25" maxlength="30">
+  </p>
+  <p>
+    <label for="select">生肖:</label>
+    <select name="select" id="select" onChange="shengxiao.src=select.value">
+      <option value="imags/sheyingjiaoliu-images/shu.png">鼠</option>
+      <option value="imags/sheyingjiaoliu-images/niu.png">牛</option>
+      <option value="imags/sheyingjiaoliu-images/hu.png">虎</option>
+      <option value="imags/sheyingjiaoliu-images/tu.png">兔</option>
+	  <option value="imags/sheyingjiaoliu-images/long.png">龙</option>
+	  <option value="imags/sheyingjiaoliu-images/she.png">蛇</option>
+	  <option value="imags/sheyingjiaoliu-images/ma.png">马</option>
+	  <option value="imags/sheyingjiaoliu-images/yang.png">羊</option>
+	  <option value="imags/sheyingjiaoliu-images/hou.png">猴</option>
+	  <option value="imags/sheyingjiaoliu-images/ji.png">鸡</option>
+	  <option value="imags/sheyingjiaoliu-images/gou.png">狗</option>
+	  <option value="imags/sheyingjiaoliu-images/zhu.png">猪</option>
+    </select>
+    <img src="imags/sheyingjiaoliu-images/shu.png" alt="" width="50" height="50" id="shengxiao"/></p>
+  <p><span style="font-family: '华文楷体'; font-size: 18px;">职业：</span>
+<label>
+  <input name="occupation" type="radio" id="occupation_0" value="教师/医生/律师" checked="checked">
+  教师/医生/律师</label>
+    <input type="radio" name="occupation" value="服务员人员" id="occupation_1">
+    <label>服务业人员</label>
+    <label>
+      <input type="radio" name="occupation" value="自由职业者" id="occupation_2">
+      自由职业者</label>
+    <label>
+      <input type="radio" name="occupation" value="工人" id="occupation_3">
+      工人</label>
+      </p>
+  <p> 
+      <span style="font-family: '华文楷体'">
+      <label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="occupation" value="公司职员" id="occupation_4">
+        公司职员</label>
+      <label>
+        <input type="radio" name="occupation" value="事业单位/公务员" id="occupation_5">
+        事业单位/公务员</label>
+      <label>
+        <input type="radio" name="occupation" value="学生" id="occupation_6">
+        学生</label>
+      <label>
+        <input type="radio" name="occupation" value="其他" id="occupation_7">
+        其他</label>
+      </span><span style="font-size: 18px"> </span>
+      <span style="font-size: 18px">
+      <label></label>
+      </span>    </p>
+  <p>
+    <label for="textarea2">喜爱摄影的原因：</label>
+    <textarea name="textarea2" cols="50" rows="10" id="textarea2"></textarea>
+<br>
+  </p>
+ </fieldset><fieldset>
+      <h3>
+        <legend>摄影作品提交</legend>
+      </h3>
+      <p>
+        <label for="fileField">摄影作品:</label>
+        <input type="file" name="fileField" id="fileField">
+      </p>
+      <p>
+        <label for="datetime">拍摄时间:</label>
+        <input type="date" name="date2" id="date2">
+      </p>
+      <p>
+        <label for="textarea">拍摄这份作品的原因:</label>
+        <textarea name="textarea" cols="50" rows="10" id="textarea"></textarea>
+      </p>
+      <p>
+        <input name="submit" type="submit" class="button" id="submit" value="提交">
+        <input name="reset" type="reset" class="button" id="reset" value="重置">        
+        <br>
+      </p>
+    </fieldset>
+</form>
+</div>
+</body>
+</html>
